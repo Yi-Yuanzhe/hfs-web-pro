@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div><p>登陆信息: <b>{{loginMsg}}</b></p></div>
+<div><p>查询信息: <b>{{queryMsg}}</b></p></div>
+<div><p>==========考试信息==========</p></div>
+<div><p>近期考试: <b>{{recentTest}}</b></p></div>
+<div><p>全级人数: <b>{{gradeStudentNum}}</b></p></div>
+<div><p>班级人数: <b>{{classStudentNum}}</b></p></div>
+<div><p>==========考试情况==========</p></div>
+<div><p>全科总分: <b>{{allScore}}</b></p></div>
+<div><p>你的总分: <b>{{yourScore}}</b></p></div>
+<div><p>班级平均分: <b>{{classAvg}}</b></p></div>
+<div><p>班级排名: <b>{{classRank}}</b></p></div>
+<div><p>全级平均分: <b>{{gradeAvg}}</b></p></div>
+<div><p>全级排名: <b>{{gradeRank}}</b></p></div>
+{% endblock %}
