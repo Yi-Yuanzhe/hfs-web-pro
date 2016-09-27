@@ -60,10 +60,21 @@ def score():
     classRank = str(queryResult['data'][0]['details'][0]['classRank'])
     gradeAvg = str(queryResult['data'][0]['details'][0]['gradeAvg'])
     gradeRank = str(queryResult['data'][0]['details'][0]['gradeRank'])
+    complexSubject = str(queryResult['data'][0]['details'][1]['detailName'])
+    allScore_complexSubject = str(queryResult['data'][0]['details'][1]['score'])
+    yourScore_complexSubject = str(queryResult['data'][0]['details'][1]['realScore'])
+    classAvg_complexSubject = str(queryResult['data'][0]['details'][1]['classAvg'])
+    classRank_complexSubject = str(queryResult['data'][0]['details'][1]['classRank'])
+    gradeAvg_complexSubject = str(queryResult['data'][0]['details'][1]['gradeAvg'])
+    gradeRank_complexSubject = str(queryResult['data'][0]['details'][1]['gradeRank'])
 
     return render_template('score.html', loginMsg = loginMsg,
         queryMsg = queryMsg, recentTest = recentTest,
         gradeStudentNum = gradeStudentNum, classStudentNum = classStudentNum,
         allScore = allScore, yourScore = yourScore,
         classAvg = classAvg, classRank = classRank,
-        gradeAvg = gradeAvg, gradeRank = gradeRank)
+        gradeAvg = gradeAvg, gradeRank = gradeRank,
+        complexSubject = complexSubject, allScore_complexSubject = allScore_complexSubject,
+        yourScore_complexSubject = yourScore_complexSubject, classAvg_complexSubject = classAvg_complexSubject,
+        classRank_complexSubject = classRank_complexSubject, gradeAvg_complexSubject = gradeAvg_complexSubject,
+        gradeRank_complexSubject = gradeRank_complexSubject)
