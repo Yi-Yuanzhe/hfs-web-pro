@@ -29,16 +29,16 @@ def getScore():
     global queryResult
     queryResult = json.loads(resp.text)
     strResult = str(queryResult)
-    strResult.replace('msg', '信息')
-    strResult.replace('name', '考试名称')
-    strResult.replace('gradeStudentNum', '全级人数')
-    strResult.replace('classStudentNum', '全班人数')
-    strResult.replace('score', '全科总分')
-    strResult.replace('realScore', '你的总分')
-    strResult.replace('classAvg', '全班平均')
-    strResult.replace('classRank', '全班排名')
-    strResult.replace('gradeAvg', '全级平均')
-    strResult.replace('gradeRank', '全级排名')
+    a = strResult.replace('msg', '信息')
+    b = a.replace('name', '考试名称')
+    c = b.replace('gradeStudentNum', '全级人数')
+    d = c.replace('classStudentNum', '全班人数')
+    e = d.replace('score', '全科总分')
+    f = e.replace('realScore', '你的总分')
+    g = f.replace('classAvg', '全班平均')
+    h = g.replace('classRank', '全班排名')
+    i = h.replace('gradeAvg', '全级平均')
+    strResult = i.replace('gradeRank', '全级排名')
 
 def isLogin():
     if loginResult is not None:
