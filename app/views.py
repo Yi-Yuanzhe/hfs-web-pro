@@ -36,6 +36,7 @@ def score():
     hfs.getScore()
     loginResult = hfs.loginResult
     queryResult = hfs.queryResult
+    strResult = hfs.strResult
     loginMsg = loginResult['msg']
     queryMsg = queryResult['msg']
     recentTest = queryResult['data'][0]['name']
@@ -55,7 +56,7 @@ def score():
     gradeAvg_complexSubject = str(queryResult['data'][0]['details'][1]['gradeAvg'])
     gradeRank_complexSubject = str(queryResult['data'][0]['details'][1]['gradeRank'])
 
-    return render_template('score.html', loginMsg = loginMsg,
+    return render_template('score.html', loginMsg = loginMsg, strResult = strResult,
         queryMsg = queryMsg, recentTest = recentTest,
         gradeStudentNum = gradeStudentNum, classStudentNum = classStudentNum,
         allScore = allScore, yourScore = yourScore,
