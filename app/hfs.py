@@ -4,8 +4,6 @@ import json
 
 from app import EncPwd
 
-#account = 'yicorleone'
-#password = '31e56aaab8b80e5ca2d1a8e4d55f0519'
 url_login = "http://hfs-be.yunxiao.com/v1/user/user-session"
 url_score = "http://hfs-be.yunxiao.com/v1/score"
 headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'}
