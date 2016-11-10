@@ -25,6 +25,7 @@ def login():
 def getScore():
     resp = s.get(url_score, headers = headers)
     global queryResult
+    global strResult
     queryResult = json.loads(resp.text)
     strResult = str(queryResult)
     a = strResult.replace('msg', '信息')
