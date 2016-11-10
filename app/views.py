@@ -34,6 +34,7 @@ def login():
 @app.route('/score')
 def score():
     hfs.getScore()
+    strResult = hfs.strResult
     loginResult = hfs.loginResult
     queryResult = hfs.queryResult
     strResult = hfs.strResult
